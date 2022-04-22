@@ -1,0 +1,35 @@
+{
+  "name": "scanner",
+  "version": "0.1.0",
+  "description": "..",
+  "main": "main.ts",
+  "author": "Jatin",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/main.js"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "canvas": "^2.9.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.3.1",
+    "image-size": "^1.0.1",
+    "pug": "^3.0.2",
+    "tesseract.js": "^2.1.5",
+    "typesync": "^0.9.0",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.25",
+    "@types/nodemon": "^1.19.1",
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
